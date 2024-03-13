@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+* {
+    font-family: 'Ojuju', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:80vh;
+    background: linear-gradient(#3b82f6, #4a7dff);
+}
+
+#mainTitle {
+    align-items:center;
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#container {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+#search input {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+}
+
+#search button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#weather {
+    margin-top: 20px;
+    display: none;
+}
+
+#weather.show {
+    display:block;
+}
+
+#weather #title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight:600;
+
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(180deg, rgb(0, 115, 255), rgb(71, 71, 169));
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#tempImage {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+#tempValue {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#tempDescription {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#infos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+#infos .info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    background-color: white;
+    gap: 10px;
+}
+
+#infos .info h2 {
+    font-size: 12px;
+    width: 20%;
+}
+
+#tempMaxIcon {
+    color: rgb(159, 19, 19);
+}
+
+#tempMinIcon {
+    color: rgb(57, 139, 232);
+}
+
+#humidityIcon {
+    color: rgb(95, 162, 239);
+}
+
+#windIcon {
+    color: rgb(130, 130, 130);
+}
+
+#errorAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#errorAlert img {
+    width: 200px;
+    margin-top: 10px;
+}
