@@ -18,6 +18,17 @@ body {
     background: linear-gradient(#3b82f6, #4a7dff);
 }
 
+.info{
+    transition: .35s;
+    cursor: pointer;
+}
+
+.infos:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+
 #mainTitle {
     align-items:center;
     flex-direction: column;
@@ -101,14 +112,14 @@ body {
     text-transform: capitalize;
 }
 
-#infos {
+.infos {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-#infos .info {
+.infos .info {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -119,7 +130,7 @@ body {
     gap: 10px;
 }
 
-#infos .info h2 {
+.infos .info h2 {
     font-size: 12px;
     width: 20%;
 }
